@@ -4,102 +4,28 @@
     <meta charset="UTF-8">
     <title>ReliaPlan LLC – Texas Registered Engineering Firm F‑27446</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        /* Header bar */
-        .header-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 40px;
-        }
-
-        /* Logo */
-        .logo-text {
-            font-size: 42px;
-            font-weight: 400;
-            color: #333333;
-            font-family: "Bahnschrift", "Segoe UI", "Montserrat", sans-serif;
-        }
-        .logo-blue {
-            color: #000080;
-        }
-
-        /* Navigation */
-        .top-nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #000080;
-            font-weight: 500;
-        }
-
-        /* Hero */
-        .hero {
-            width: 100%;
-            overflow: hidden;
-        }
-        .hero img {
-            width: 100%;
-            height: 100%;
-            max-height: 420px;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* Content */
-        .content {
-            max-width: 900px;
-            margin: 40px auto;
-            text-align: center;
-        }
-
-        .subtext {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .flag-row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .flag-row img {
-            height: 22px;
-            width: auto;
-        }
-
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            font-size: 14px;
-            color: #777;
-            padding-bottom: 40px;
-        }
-
-        @media (max-width: 600px) {
-            .hero img { max-height: 300px; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="header-bar">
-    <div class="logo-text">
-        <span class="logo-blue">R</span>elia<span class="logo-blue">P</span>lan
+<!-- SKY BANNER -->
+<div class="header-banner">
+    <div class="header-bar">
+        <div class="logo-text">
+            <span class="logo-blue">R</span>elia<span class="logo-blue">P</span>lan
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </div>
 
-    <nav class="top-nav">
+    <nav class="mobile-nav" id="mobileMenu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
@@ -107,23 +33,31 @@
     </nav>
 </div>
 
+<!-- HERO IMAGE -->
 <div class="hero">
-    <img src="hero.jpg" alt="Industrial Plant">
+    <img src="hero.jpg" alt="Industrial Plant" style="width:100%; max-height:420px; object-fit:cover;">
 </div>
 
-<div class="content">
+<!-- CONTENT -->
+<div class="content" style="max-width:900px; margin:40px auto; text-align:center;">
     <h1>ReliaPlan LLC</h1>
-    <div class="subtext">Texas Registered Engineering Firm F‑27446</div>
+    <div>Texas Registered Engineering Firm F‑27446</div>
 
-    <div class="flag-row">
-        <img src="flag.jpg" alt="US Flag">
-        <span>Veteran Owned and Operated</span>
+    <div style="margin-top:10px;">
+        🇺🇸 Veteran Owned and Operated
     </div>
 </div>
 
 <footer>
     © ReliaPlan LLC
 </footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
+</script>
 
 </body>
 </html>
