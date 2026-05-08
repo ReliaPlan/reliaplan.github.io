@@ -4,7 +4,7 @@ body {
     font-family: Bahnschrift, Arial, sans-serif;
     background-color: #ffffff;
     color: #222;
-    padding-bottom: 60px; /* prevents content from hiding behind fixed footer */
+    padding-bottom: 60px; /* space for fixed footer */
 }
 
 a {
@@ -17,11 +17,11 @@ a {
     background-image: url('sky.jpg');
     background-size: cover;
     background-position: center;
-    height: 220px; /* FIXED: smaller banner */
+    height: 220px; /* smaller banner */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-bottom: 4px solid #000080; /* branded blue line */
+    border-bottom: 4px solid #000080; /* thin branded blue line */
 }
 
 /* HEADER BAR */
@@ -77,7 +77,7 @@ a {
 /* HERO IMAGE */
 .hero img {
     width: 100%;
-    max-height: 360px; /* FIXED: smaller hero */
+    max-height: 360px; /* slightly shorter hero */
     object-fit: cover;
 }
 
@@ -88,8 +88,8 @@ a {
     text-align: center;
 }
 
-/* FIX: non-bold page titles */
-.page-title {
+/* Make top-level page titles non-bold without touching your HTML */
+.content h1 {
     font-weight: 400;
     margin-bottom: 10px;
 }
