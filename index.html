@@ -2,118 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReliaPlan LLC</title>
-
-    <style>
-        :root {
-            /* Make sure this matches your actual file name */
-            --sky-banner: url('sky.jpg');
-        }
-
-        body {
-            margin: 0;
-            font-family: Bahnschrift, Arial, sans-serif;
-            background-color: #ffffff;
-            color: #222;
-        }
-
-        /* HEADER */
-        header {
-            background-image: var(--sky-banner);
-            background-size: cover;
-            background-position: center;
-            height: 300px;   /* MATCHES OTHER PAGES */
-            padding: 20px 40px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 48px;
-            font-weight: 600;
-            color: #000080;
-        }
-
-        nav {
-            display: flex;
-            gap: 30px;
-            font-size: 18px;
-        }
-
-        nav a {
-            color: #000;
-            text-decoration: none;
-            font-weight: 400;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* HERO IMAGE */
-        .hero {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* MAIN CONTENT */
-        .content {
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            color: #444;
-        }
-    </style>
+    <title>ReliaPlan LLC – Texas Registered Engineering Firm F‑27446</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="header-top">
-            <div class="logo">ReliaPlan</div>
-
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+<!-- SKY BANNER -->
+<div class="header-banner">
+    <div class="header-bar">
+        <div class="logo-text">
+            <span class="logo-blue">R</span>elia<span class="logo-blue">P</span>lan
         </div>
-    </header>
 
-    <!-- HERO IMAGE -->
-    <img src="industrial.jpg" alt="Industrial Facility" class="hero">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-    <!-- MAIN CONTENT -->
-    <div class="content">
-        <h2 style="font-weight: 400; margin-bottom: 10px;">ReliaPlan LLC</h2>
-
-        <div style="line-height: 1.2; margin-top: 5px;">
-            <div>Texas Registered Engineering Firm F‑27446</div>
-            <div>US Veteran Owned and Operated</div>
-        </div>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        © ReliaPlan LLC
-    </footer>
+    <nav class="mobile-nav" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</div>
+
+<!-- HERO IMAGE -->
+<div class="hero">
+    <img src="hero.jpg" alt="Industrial Plant" style="width:100%; max-height:420px; object-fit:cover;">
+</div>
+
+<!-- CONTENT -->
+<div class="content" style="max-width:900px; margin:40px auto; text-align:center;">
+    <h1>ReliaPlan LLC</h1>
+    <div>Texas Registered Engineering Firm F‑27446</div>
+
+    <div style="margin-top:10px;">
+        🇺🇸 Veteran Owned and Operated
+    </div>
+</div>
+
+<footer>
+    © ReliaPlan LLC
+</footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
+</script>
 
 </body>
 </html>
