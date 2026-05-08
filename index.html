@@ -7,7 +7,8 @@
 
     <style>
         :root {
-            --sky-banner: url('sky.png'); /* or sky.jpg if you renamed it */
+            /* Use jpg here if your file is sky.jpg */
+            --sky-banner: url('sky.jpg');
         }
 
         body {
@@ -21,17 +22,22 @@
             background-image: var(--sky-banner);
             background-size: cover;
             background-position: center;
-            height: 330px; /* slightly taller per recommendation */
+            height: 330px;
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 20px 40px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* subtle separation */
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         nav {
             display: flex;
-            justify-content: flex-end;
             gap: 30px;
             font-size: 18px;
         }
@@ -55,6 +61,7 @@
         .hero {
             width: 100%;
             height: auto;
+            display: block;
         }
 
         .content {
@@ -75,14 +82,16 @@
 
     <!-- HEADER -->
     <header>
-        <div class="logo">ReliaPlan</div>
+        <div class="header-top">
+            <div class="logo">ReliaPlan</div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <!-- HERO IMAGE -->
