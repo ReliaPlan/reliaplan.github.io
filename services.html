@@ -8,15 +8,19 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f7f7f7; /* Off-white WordPress-style */
+            background-color: #f7f7f7;
             color: #333;
-            margin: 40px auto;
-            max-width: 1100px; /* Supports two columns */
+            margin: 0;
             line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 90%;
+            margin: 40px auto;
             text-align: left;
         }
 
-        /* Top navigation */
         nav {
             text-align: right;
             margin-bottom: 40px;
@@ -34,13 +38,6 @@
             font-weight: 600;
         }
 
-        /* Two-column layout */
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
         h2 {
             font-size: 22px;
             margin-bottom: 10px;
@@ -48,8 +45,19 @@
         }
 
         ul {
-            margin-top: 0;
             padding-left: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         footer {
@@ -57,62 +65,62 @@
             text-align: center;
             font-size: 14px;
             color: #777;
+            padding-bottom: 40px;
         }
     </style>
 </head>
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<div class="container">
 
-<h1>Services</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<div class="grid">
+    <h1>Services</h1>
 
-    <div>
-        <h2>Maintenance</h2>
-        <ul>
-            <li>Assessment of maintenance programs</li>
-            <li>Development and optimization of work processes</li>
-            <li>Creation and revision of procedures</li>
-            <li>Enhancement of CMMS (SAP) data for improved performance</li>
-        </ul>
+    <div class="grid">
 
-        <h2>Reliability</h2>
-        <ul>
-            <li>Criticality analysis to prioritize equipment reliability</li>
-            <li>Development of preventative maintenance (PM) strategies</li>
-            <li>Assessment of spare parts to ensure availability and efficiency</li>
-            <li>Evaluation of equipment condition to mitigate risks</li>
-        </ul>
+        <div>
+            <h2>Maintenance Management</h2>
+            <p>
+                ReliaPlan strengthens maintenance programs to improve efficiency, reduce cost, and support long‑term equipment health.
+            </p>
+            <ul>
+                <li>Maintenance planning & scheduling</li>
+                <li>Work order process optimization</li>
+                <li>Maintenance excellence assessments</li>
+                <li>Turnaround scope development & job planning support</li>
+            </ul>
+        </div>
 
-        <h2>Mechanical Integrity</h2>
-        <ul>
-            <li>Development of comprehensive integrity programs</li>
-            <li>Assessment of fixed equipment</li>
-            <li>Formulation of repair plans based on technical evaluations</li>
-        </ul>
-    </div>
+        <div>
+            <h2>Reliability Engineering</h2>
+            <p>
+                We apply practical reliability engineering methods to improve uptime, reduce failures, and support asset health.
+            </p>
+            <ul>
+                <li>Equipment criticality analysis</li>
+                <li>Predictive maintenance & spare parts strategies</li>
+                <li>Equipment health monitoring assessments & recommendations</li>
+            </ul>
+        </div>
 
-    <div>
-        <h2>Turnaround</h2>
-        <ul>
-            <li>Definition and planning of outage scopes</li>
-            <li>Implementation of risk-based work selection strategies</li>
-            <li>Compilation of job packages for streamlined execution</li>
-        </ul>
+        <div>
+            <h2>Mechanical Integrity</h2>
+            <p>
+                ReliaPlan provides evaluations and program support to help facilities maintain compliance and protect fixed equipment.
+            </p>
+            <ul>
+                <li>Mechanical Integrity (MI) program assessments & support</li>
+                <li>Pressure vessel & piping integrity evaluations</li>
+                <li>API 510 / 570 / 653 compliance support</li>
+            </ul>
+        </div>
 
-        <h2>Project Management</h2>
-        <ul>
-            <li>Development of project scope and objectives</li>
-            <li>Planning and management of budgets and schedules</li>
-            <li>Conducting design reviews to ensure alignment with specifications</li>
-            <li>Acting as owner representative to oversee project execution</li>
-        </ul>
     </div>
 
 </div>
