@@ -14,72 +14,70 @@
             line-height: 1.6;
         }
 
-        .container {
-            max-width: 1100px;
-            width: 90%;
-            margin: 40px auto;
-            text-align: left;
+        .logo-header {
+            width: 100%;
+            text-align: center;
+            padding: 40px 0 10px 0;
         }
+        .logo-text {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+            color: #333333;
+            font-family: "Bahnschrift", "Segoe UI", "Montserrat", sans-serif;
+        }
+        .logo-blue { color: #000080; }
 
         nav {
-            text-align: right;
-            margin-bottom: 40px;
+            text-align: center;
+            padding: 15px 0;
         }
         nav a {
-            margin-left: 20px;
+            margin: 0 18px;
             text-decoration: none;
-            color: #005a9c;
+            color: #000080;
             font-weight: bold;
         }
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 30px;
-            font-weight: 600;
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #222;
-        }
+        h1 { font-size: 36px; }
+        h2 { font-size: 24px; margin-top: 30px; }
 
-        ul {
-            padding-left: 20px;
-        }
-
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            font-size: 14px;
-            color: #777;
-            padding-bottom: 40px;
+        @media (max-width: 700px) {
+            h1 { font-size: 30px; }
+            h2 { font-size: 20px; }
         }
     </style>
 </head>
 <body>
 
+<div class="logo-header">
+    <h1 class="logo-text">
+        <span class="logo-blue">R</span>elia
+        <span class="logo-blue">P</span>lan
+    </h1>
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
 <div class="container">
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
     <h1>About</h1>
 
-    <p>
-        ReliaPlan is a veteran‑owned consulting firm providing reliability, maintenance, and mechanical integrity support to industrial facilities.
-        We help organizations strengthen asset performance, reduce downtime, and maintain compliance in demanding operational environments.
-    </p>
+    <p>ReliaPlan is a veteran-owned consulting firm providing reliability, maintenance, and mechanical integrity support to industrial facilities. We help organizations strengthen asset performance, reduce downtime, and maintain compliance in demanding operational environments.</p>
 
     <h2>Maintenance Management</h2>
-    <p>
-        A strong maintenance foundation improves efficiency, reduces cost, and supports long‑term equipment health.
-        ReliaPlan helps organizations enhance their preventive, predictive, and corrective maintenance programs.
-    </p>
+    <p>A strong maintenance foundation improves efficiency, reduces cost, and supports long-term equipment health. ReliaPlan helps organizations enhance their preventive, predictive, and corrective maintenance programs.</p>
+
     <ul>
         <li>Maintenance planning & scheduling</li>
         <li>Work order process optimization</li>
@@ -88,38 +86,8 @@
     </ul>
 
     <h2>Reliability Engineering</h2>
-    <p>
-        Improving reliability is essential for uptime and risk reduction.
-        We apply practical reliability engineering methods to strengthen asset performance and prevent failures.
-    </p>
-    <ul>
-        <li>Equipment criticality analysis</li>
-        <li>Predictive maintenance & spare parts strategies</li>
-        <li>Equipment health monitoring assessments & recommendations</li>
-    </ul>
-
-    <h2>Mechanical Integrity</h2>
-    <p>
-        Protecting fixed equipment is critical for safety, compliance, and operational continuity.
-        ReliaPlan provides evaluations and program support to help facilities maintain integrity and meet industry standards.
-    </p>
-    <ul>
-        <li>Mechanical Integrity (MI) program assessments & support</li>
-        <li>Pressure vessel & piping integrity evaluations</li>
-        <li>API 510 / 570 / 653 compliance support</li>
-    </ul>
-
-    <h2>Committed to Excellence</h2>
-    <p>
-        ReliaPlan is known for practical solutions, technical expertise, and a commitment to operational excellence.
-        Our mission is to help organizations build reliable, efficient, and compliant operations across petrochemical, manufacturing, and heavy industrial environments.
-    </p>
-
+    <p>Improving reliability is essential for uptime and risk reduction. We apply practical reliability engineering methods to improve equipment performance and reduce operational risk.</p>
 </div>
-
-<footer>
-    © ReliaPlan LLC
-</footer>
 
 </body>
 </html>
