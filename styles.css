@@ -99,6 +99,14 @@ body {
 }
 
 /* ============================
+   HOME PAGE TITLE FIX
+   ============================ */
+.content h1 {
+    font-weight: 400;      /* unbolds ReliaPlan LLC */
+    margin-bottom: 8px;    /* tightens spacing */
+}
+
+/* ============================
    FOOTER
    ============================ */
 footer {
