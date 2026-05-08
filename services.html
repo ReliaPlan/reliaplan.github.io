@@ -8,38 +8,55 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333333;
+            background-color: #f7f7f7; /* Off-white WordPress-style */
+            color: #333;
             margin: 40px auto;
+            max-width: 1100px; /* Wider to support two columns */
             line-height: 1.6;
-            max-width: 900px;
             text-align: left;
         }
+
+        /* Top navigation */
         nav {
-            margin-bottom: 30px;
+            text-align: right;
+            margin-bottom: 40px;
         }
         nav a {
-            margin-right: 20px;
+            margin-left: 20px;
             text-decoration: none;
             color: #005a9c;
             font-weight: bold;
         }
+
         h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-size: 36px;
+            margin-bottom: 30px;
             font-weight: 600;
         }
+
+        /* Two-column layout */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
         h2 {
             font-size: 22px;
-            font-weight: 500;
-            margin-top: 30px;
-            color: #444444;
+            margin-bottom: 10px;
+            color: #222;
         }
+
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+
         footer {
             margin-top: 60px;
-            font-size: 14px;
-            color: #777777;
             text-align: center;
+            font-size: 14px;
+            color: #777;
         }
     </style>
 </head>
@@ -47,38 +64,58 @@
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
     <a href="about.html">About</a>
+    <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
 </nav>
 
 <h1>Services</h1>
 
-<p>
-ReliaPlan provides practical, data‑driven support to improve equipment reliability, 
-optimize maintenance programs, and strengthen asset performance.
-</p>
+<div class="grid">
 
-<h2>Reliability & Maintenance Program Development</h2>
-<p>Program structure, workflows, roles, and sustainable reliability practices.</p>
+    <div>
+        <h2>Maintenance</h2>
+        <ul>
+            <li>Assessment of maintenance programs</li>
+            <li>Development and optimization of work processes</li>
+            <li>Creation and revision of procedures</li>
+            <li>Enhancement of CMMS (SAP) data for improved performance</li>
+        </ul>
 
-<h2>Preventive & Predictive Maintenance Planning</h2>
-<p>PM/PdM task development, interval setting, and optimization.</p>
+        <h2>Reliability</h2>
+        <ul>
+            <li>Criticality analysis to prioritize equipment reliability</li>
+            <li>Development of preventative maintenance (PM) strategies</li>
+            <li>Assessment of spare parts to ensure availability and efficiency</li>
+            <li>Evaluation of equipment condition to mitigate risks</li>
+        </ul>
 
-<h2>Asset Criticality Analysis</h2>
-<p>Risk‑based prioritization to focus resources where they matter most.</p>
+        <h2>Mechanical Integrity</h2>
+        <ul>
+            <li>Development of comprehensive integrity programs</li>
+            <li>Assessment of fixed equipment</li>
+            <li>Formulation of repair plans based on technical evaluations</li>
+        </ul>
+    </div>
 
-<h2>Failure Mode & Effects Analysis (FMEA)</h2>
-<p>Structured identification of failure modes and mitigation strategies.</p>
+    <div>
+        <h2>Turnaround</h2>
+        <ul>
+            <li>Definition and planning of outage scopes</li>
+            <li>Implementation of risk-based work selection strategies</li>
+            <li>Compilation of job packages for streamlined execution</li>
+        </ul>
 
-<h2>CMMS Optimization & Workflow Design</h2>
-<p>Improving work order processes, data quality, and maintenance execution.</p>
+        <h2>Project Management</h2>
+        <ul>
+            <li>Development of project scope and objectives</li>
+            <li>Planning and management of budgets and schedules</li>
+            <li>Conducting design reviews to ensure alignment with specifications</li>
+            <li>Acting as owner representative to oversee project execution</li>
+        </ul>
+    </div>
 
-<h2>Root Cause Analysis (RCA)</h2>
-<p>Identifying true causes of failures and preventing recurrence.</p>
-
-<h2>Maintenance KPIs & Performance Tracking</h2>
-<p>MTBF, MTTR, PM compliance, backlog health, and schedule adherence.</p>
+</div>
 
 <footer>
     © ReliaPlan LLC
