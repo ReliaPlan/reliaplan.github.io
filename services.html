@@ -14,120 +14,83 @@
             line-height: 1.6;
         }
 
-        .container {
-            max-width: 1100px;
-            width: 90%;
-            margin: 40px auto;
-            text-align: left;
+        .logo-header {
+            width: 100%;
+            text-align: center;
+            padding: 40px 0 10px 0;
         }
+        .logo-text {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+            color: #333333;
+            font-family: "Bahnschrift", "Segoe UI", "Montserrat", sans-serif;
+        }
+        .logo-blue { color: #000080; }
 
         nav {
-            text-align: right;
-            margin-bottom: 40px;
+            text-align: center;
+            padding: 15px 0;
         }
         nav a {
-            margin-left: 20px;
+            margin: 0 18px;
             text-decoration: none;
-            color: #005a9c;
+            color: #000080;
             font-weight: bold;
         }
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 30px;
-            font-weight: 600;
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #222;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
-        @media (max-width: 800px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            font-size: 14px;
-            color: #777;
-            padding-bottom: 40px;
-        }
+        h1 { font-size: 36px; }
+        h2 { font-size: 24px; margin-top: 30px; }
     </style>
 </head>
 <body>
 
-<div class="container">
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <h1>Services</h1>
-
-    <div class="grid">
-
-        <div>
-            <h2>Maintenance Management</h2>
-            <p>
-                ReliaPlan strengthens maintenance programs to improve efficiency, reduce cost, and support long‑term equipment health.
-            </p>
-            <ul>
-                <li>Maintenance planning & scheduling</li>
-                <li>Work order process optimization</li>
-                <li>Maintenance excellence assessments</li>
-                <li>Turnaround scope development & job planning support</li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Reliability Engineering</h2>
-            <p>
-                We apply practical reliability engineering methods to improve uptime, reduce failures, and support asset health.
-            </p>
-            <ul>
-                <li>Equipment criticality analysis</li>
-                <li>Predictive maintenance & spare parts strategies</li>
-                <li>Equipment health monitoring assessments & recommendations</li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Mechanical Integrity</h2>
-            <p>
-                ReliaPlan provides evaluations and program support to help facilities maintain compliance and protect fixed equipment.
-            </p>
-            <ul>
-                <li>Mechanical Integrity (MI) program assessments & support</li>
-                <li>Pressure vessel & piping integrity evaluations</li>
-                <li>API 510 / 570 / 653 compliance support</li>
-            </ul>
-        </div>
-
-    </div>
-
+<div class="logo-header">
+    <h1 class="logo-text">
+        <span class="logo-blue">R</span>elia
+        <span class="logo-blue">P</span>lan
+    </h1>
 </div>
 
-<footer>
-    © ReliaPlan LLC
-</footer>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h1>Services</h1>
+
+    <h2>Maintenance Management</h2>
+    <ul>
+        <li>Maintenance planning & scheduling</li>
+        <li>Work order process optimization</li>
+        <li>Maintenance program development</li>
+        <li>Turnaround planning support</li>
+    </ul>
+
+    <h2>Reliability Engineering</h2>
+    <ul>
+        <li>Root cause analysis (RCA)</li>
+        <li>Failure mode & effects analysis (FMEA)</li>
+        <li>Asset criticality ranking</li>
+        <li>Reliability program development</li>
+    </ul>
+
+    <h2>Mechanical Integrity</h2>
+    <ul>
+        <li>Inspection program development</li>
+        <li>Risk-based inspection (RBI)</li>
+        <li>Compliance support</li>
+    </ul>
+</div>
 
 </body>
 </html>
