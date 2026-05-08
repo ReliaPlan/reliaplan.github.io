@@ -28,11 +28,11 @@
             font-weight: bold;
         }
 
-        /* Hero image placeholder */
+        /* Hero image */
         .hero {
             width: 100%;
-            height: 380px;
-            background-color: #d0d0d0;
+            height: 420px;
+            background-image: url('hero.jpg'); /* <-- your uploaded hero image */
             background-size: cover;
             background-position: center;
         }
@@ -55,10 +55,18 @@
             margin-bottom: 10px;
         }
 
-        .flag {
+        /* Flag row */
+        .flag-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
             margin-top: 10px;
-            font-size: 16px;
-            color: #444;
+        }
+
+        .flag-row img {
+            height: 22px; /* Clean, subtle size */
+            width: auto;
         }
 
         footer {
@@ -79,13 +87,16 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<!-- Replace this with your actual image file -->
 <div class="hero"></div>
 
 <div class="content">
     <h1>ReliaPlan LLC</h1>
     <div class="subtext">Texas Registered Engineering Firm F‑27446</div>
-    <div class="flag">🇺🇸 Veteran Owned and Operated</div>
+
+    <div class="flag-row">
+        <img src="flag.jpg" alt="US Flag">
+        <span>Veteran Owned and Operated</span>
+    </div>
 </div>
 
 <footer>
