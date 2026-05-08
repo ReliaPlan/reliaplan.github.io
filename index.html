@@ -34,10 +34,12 @@
             overflow: hidden;
         }
 
-        /* Responsive hero image */
+        /* Responsive hero image with max height */
         .hero img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            max-height: 420px;   /* <-- adjust this number to taste */
+            object-fit: cover;   /* <-- prevents distortion, crops edges */
             display: block;
         }
 
@@ -80,6 +82,13 @@
             font-size: 14px;
             color: #777;
             padding-bottom: 40px;
+        }
+
+        /* Optional: slightly smaller hero on mobile */
+        @media (max-width: 600px) {
+            .hero img {
+                max-height: 300px;
+            }
         }
     </style>
 </head>
