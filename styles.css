@@ -138,3 +138,12 @@ footer {
     font-size: 14px;
     color: #777;
     padding-bottom: 40px;
+
+footer a {
+    color: #000080 !important;   /* Your brand blue */
+    text-decoration: underline;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
