@@ -4,7 +4,7 @@
 :root {
     --brand-blue: #000080;
     --brand-gray: #333333;
-    --sky-banner: url('sky.jpg'); /* replace with your sky image filename */
+    --sky-banner: url('sky.jpg');
 }
 
 /* ============================
@@ -107,25 +107,49 @@ body {
 }
 
 /* ============================
-   TWO-COLUMN SERVICES LAYOUT (TIGHTER)
+   BANNER HEADLINE (NEW)
+   ============================ */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 260px; /* adjust if needed */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-title {
+    font-family: "Bahnschrift", sans-serif;
+    font-weight: 300;        /* lighter than logo */
+    font-size: 32px;         /* bigger than menu, smaller than logo */
+    color: #ffffff;
+    margin: 0;
+    padding: 0 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+}
+
+/* ============================
+   TWO-COLUMN SERVICES LAYOUT
    ============================ */
 .services-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px 40px; /* tighter vertical spacing */
+    gap: 25px 40px;
 }
 
 .services-grid h2 {
-    margin: 0 0 6px 0; /* tighten header spacing */
+    margin: 0 0 6px 0;
 }
 
 .services-grid ul {
-    margin: 0; /* remove default top margin */
+    margin: 0;
     padding-left: 20px;
 }
 
 .services-grid li {
-    margin-bottom: 4px; /* tighter bullet spacing */
+    margin-bottom: 4px;
     line-height: 1.35;
 }
 
@@ -139,11 +163,10 @@ footer {
     color: #777;
     padding-bottom: 40px;
 }
-   
-/* LinkedIn link color override */
+
 footer a,
 footer a:visited {
-    color: #000080 !important;   /* ReliaPlan brand blue */
+    color: var(--brand-blue) !important;
     text-decoration: underline;
 }
 
