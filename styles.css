@@ -114,7 +114,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 260px; /* adjust if needed */
+    height: auto;        /* ← restores original banner height */
+    padding: 20px 0;     /* ← optional, keeps breathing room */
     background-size: cover;
     background-position: center;
     position: relative;
