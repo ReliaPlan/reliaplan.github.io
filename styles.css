@@ -116,3 +116,20 @@ footer {
     color: #777;
     padding-bottom: 40px;
 }
+
+/* ============================
+   TWO-COLUMN SERVICES LAYOUT
+   ============================ */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.services-grid h2 {
+    margin-top: 0;
+}
+
+.services-grid ul {
+    margin-top: 10px;
+}
