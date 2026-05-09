@@ -138,9 +138,12 @@ footer {
     font-size: 14px;
     color: #777;
     padding-bottom: 40px;
-
-footer a {
-    color: #000080 !important;   /* Your brand blue */
+}
+   
+/* LinkedIn link color override */
+footer a,
+footer a:visited {
+    color: #000080 !important;   /* ReliaPlan brand blue */
     text-decoration: underline;
 }
 
