@@ -32,11 +32,34 @@
     </nav>
 </div>
 
-<div class="container" style="max-width:900px; margin:40px auto; padding:0 20px;">
+<div class="container" style="max-width:900px; margin:40px auto; padding:0 20px; text-align:center;">
     <h1>Contact</h1>
 
-    <p>Email: <strong>reliaplanllc@gmail.com</strong></p>
-    <p>Location: Houston, Texas</p>
+    <p>If you have questions or would like to discuss a project, please reach out using the form below.</p>
+
+    <form action="https://formspree.io/f/xrejyaln" method="POST" style="max-width:500px; margin:30px auto 0 auto; text-align:left;">
+        <label>Name</label>
+        <input type="text" name="name" required 
+               style="width:100%; padding:10px; margin-bottom:12px;">
+
+        <label>Email</label>
+        <input type="email" name="email" required 
+               style="width:100%; padding:10px; margin-bottom:12px;">
+
+        <label>Message</label>
+        <textarea name="message" rows="5" required
+                  style="width:100%; padding:10px; margin-bottom:12px;"></textarea>
+
+        <button type="submit" 
+                style="padding:10px 20px; background-color:#000080; color:white; border:none; cursor:pointer;">
+            Send Message
+        </button>
+    </form>
+
+    <p style="margin-top:25px;">
+        Or email us directly at 
+        <a href="mailto:info@reliaplan.com">info@reliaplan.com</a>
+    </p>
 </div>
 
 <footer>
